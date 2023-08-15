@@ -220,8 +220,7 @@ the DOM looks like when our tests are running. Let's try this out instead:
 
 ```jsx
 // src/__tests__/Article.test.js
-test("displays the text 'please pass this test'", () => {
-  render(<Article />);
+
 
   // add this line
   screen.debug();
@@ -251,7 +250,7 @@ test("displays the text 'please pass this test'", () => {
 
   screen.debug(element);
 
-  expect(element).toBeInTheDocument();
+  expect(Lelement).toBeInTheDocument();
 });
 ```
 

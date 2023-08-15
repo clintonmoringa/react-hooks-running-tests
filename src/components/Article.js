@@ -1,11 +1,14 @@
 import React from "react";
 
-function Article() {
-  return (
-    <div>
-      {/* please pass this test */}
-    </div>
-  );
+
+function Header(props) {
+  return <h1>hello from the Header!</h1>;
 }
 
-export default Article;
+export default Header;
+
+screen.debug();
+
+  expect(screen.queryByText("please pass this test")).toBeInTheDocument();
+
+
